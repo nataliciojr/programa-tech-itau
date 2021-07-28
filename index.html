@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Tech Itaú</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <form action="" class="formulario">
+        <!-- <img src="logo.jpg" class="imgLogo" /> -->
+  
+        <h1 class="formulario__titulo">Formulário de Cadastro Pessoal</h1>
+        <h3 class="formulario__subtitulo">Itaú Unibanco</h3>
+        <p class="formulario__paragafo">
+          Estimular o poder de transformação das pessoas.
+        </p>
+  
+        <label for="nome" class="formulario__label">Nome <sup>*</sup> </label>
+        <input
+          id="name"
+          type="text"
+          name="nome"
+          size="30"
+          maxlength="28"
+          placeholder="Digite seu nome completo"
+          title="use letras minusculas"
+          pattern="[A-Za-z çáâãéêíóôúü]+"
+          required="required"
+          class="formulario__input"
+        />
+        <label for="cpf" class="formulario__label">CPF <sup>*</sup> </label>
+        <input
+          id="cpf"
+          type="text"
+          name="cpf"
+          size="16"
+          maxlength="14"
+          class="formulario__input"
+          placeholder="___.___.___-__"
+          title="Somente números"
+          required="required"
+        />
+        <label for="rg" class="formulario__label">RG</label>
+        <input
+          id="rg"
+          type="text"
+          name="rg"
+          size="16"
+          maxlength="14"
+          placeholder="Digite seu RG"
+          title="Somente números"
+          class="formulario__input"
+        />
+        <label for="cep" class="formulario__label">CEP <sup>*</sup></label>
+        <input
+          id="cep"
+          type="text"
+          name="cep"
+          size="10"
+          maxlength="9"
+          placeholder="______-___"
+          pattern="[0-9]{5}-[0-9]{3}+"
+          required="required"
+          class="formulario__input"
+        />
+        <label for="endereco" class="formulario__label">Endereço<sup>*</sup></label>
+        <input
+          id="endereco"
+          type="text"
+          name="endereco"
+          size="30"
+          maxlength="28"
+          required="required"
+          placeholder="Digite seu endereço"
+          title="Começe com Rua ou AV"
+          pattern="[A-Za-z0-9 çáâãéêíóôúü,.-]+"
+          class="formulario__input"
+        />
+        <label for="numero" class="formulario__label">Número<sup>*</sup></label>
+        <input
+          id="numero"
+          type="text"
+          name="numero"
+          size="10"
+          maxlength="7"
+          title="Somente números"
+          required="required"
+          placeholder="Digite N° da sua residência"
+          class="formulario__input"
+        />
+        <label for="bairro" class="formulario__label">Bairro<sup>*</sup></label>
+        <input
+          id="bairro"
+          type="text"
+          name="bairro"
+          size="20"
+          maxlength="18"
+          title="Digite seu bairro"
+          pattern="[A-Za-z0-9 çáâãéêíóôúü,.-]+"
+          required="required"
+          placeholder="Digite seu bairro"
+          class="formulario__input"
+        />
+        <label for="cidade" class="formulario__label">Cidade<sup>*</sup></label>
+        <input
+          id="cidade"
+          type="text"
+          name="cidade"
+          size="20"
+          maxlength="15"
+          required="required"
+          placeholder="Digite sua cidade"
+          class="formulario__input"
+        />
+        <label for="estado" class="formulario__label">Estado<sup>*</sup></label>
+        <input
+          id="estado"
+          type="text"
+          name="estado"
+          size="2"
+          maxlength="2"
+          required="required"
+          placeholder="Digite seu estado"
+          class="formulario__input"
+        />
+   
+        <label for="telefoneFixo" class="formulario__label">Telefone Fixo</label>
+        <input
+          id="telefoneFixo"
+          type="text"
+          name="telefoneFixo"
+          size="14"
+          maxlength="15"
+          placeholder="(__) ____-____"
+          title="Somente números"
+          class="formulario__input"
+        />
+        <label for="telefoneCelular" class="formulario__label">Telefone Celular<sup>*</sup></label>
+        <input
+          id="telefoneCelular"
+          type="text"
+          name="telefoneCelular"
+          size="13"
+          maxlength="14"
+          required="required"
+          placeholder="(__) ____-____)"
+          class="formulario__input"
+        />
+  
+        <label for="selecionaSexo" class="formulario__label"
+          >Sexo</label
+        >
+        <select id="selecionaSexo" name="listaselecionaSexos" class="formulario__input">
+          <option>F = Feminino</option>
+          <option>M = Masculino</option>
+        </select>
+        
+        <button id="submit" onclick="popup()" class="formulario__submit">Enviar dados</button>
+
+        <footer>
+        2021- Natalicio Campos de Souza Junior - Gama Academy - Itaú
+        </footer>
+      </form>
+      <script src="js/form.js"></script>
+
+
+</body>
+</html>
